@@ -1,0 +1,28 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "source": [
+    "def solution(array, commands):\n",
+    "    answer = []\n",
+    "    for command in commands:\n",
+    "        i,j,k = command[0], command[1], command[2]\n",
+    "        slicing = array[i-1:j]\n",
+    "        slicing.sort()\n",
+    "        answer.append(slicing[k-1])\n",
+    "    return answer"
+   ],
+   "outputs": [],
+   "metadata": {}
+  }
+ ],
+ "metadata": {
+  "orig_nbformat": 4,
+  "language_info": {
+   "name": "python"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
